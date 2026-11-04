@@ -162,6 +162,15 @@ footer{background:var(--bg);padding:50px 0 34px;position:relative;z-index:3;bord
 .pval{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.pval b{font-size:2.2rem;font-weight:800;letter-spacing:-.02em}.pval small{color:var(--mu);font-weight:700;font-size:.78rem}
 .pprice>p{color:var(--mu);font-size:.82rem}.pprice .btn{margin-top:10px;width:100%;text-align:center}
 @media(max-width:900px){.plans{grid-template-columns:1fr}}
+/* destaque */
+#destaque{padding:70px 0 40px}
+.dst{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:44px;border-color:var(--b2);box-shadow:0 0 70px rgba(30,107,255,.3)}
+.dtx{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.dtx h2{font-size:clamp(1.9rem,4vw,3rem)}.dtx p{color:var(--mu);max-width:46ch}
+.dtx .cta-row{margin-top:8px;justify-content:flex-start}
+.vwrap{justify-self:center;width:100%;max-width:340px;aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.28);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 60px rgba(30,107,255,.4)}
+.vwrap video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+@media(max-width:900px){.dst{grid-template-columns:1fr;padding:28px 22px;gap:28px}.vwrap{order:-1;max-width:300px}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -183,6 +192,18 @@ footer{background:var(--bg);padding:50px 0 34px;position:relative;z-index:3;bord
  </div>
  <div class="mt" id="heroMt" aria-hidden="true"><div class="fog"></div></div>
 </section>
+
+<section id="destaque"><div class="wrap">
+ <div class="dst glass rv">
+  <div class="dtx">
+   <span class="tag">Em destaque</span>
+   <h2>Veja a <b>Altus Mídia</b> em ação</h2>
+   <p>Um olhar rápido sobre como transformamos presença digital em identidade, posicionamento e contato com o seu público.</p>
+   <div class="cta-row"><a class="btn p wa" href="#">Falar com a agência</a><a class="btn g" href="#planos">Ver os planos</a></div>
+  </div>
+  <div class="vwrap"><video id="vdest" controls playsinline preload="metadata" poster="media/destaque-poster.jpg" aria-label="Vídeo de destaque da Altus Mídia"><source src="media/destaque.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video></div>
+ </div>
+</div></section>
 
 <section id="servicos"><div class="wrap">
  <div class="head rv"><h2>Por que escolher a <b>Altus</b></h2><p>Um perfil bonito não basta. Cuidamos da imagem, do posicionamento e do caminho até o seu contato.</p></div>
